@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #019bb0;
+  font-family: Quicksand, sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+#navbar .navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.navigation li {
+  display: block;
+  margin-right: 2em;
+  font-size: 1.5em;
+  transition: background 0.3s ease-in;
+}
+
+.navigation li:hover {
+  background: rgb(118, 126, 181);
+}
+
+.logo {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: fixed;
+  top: 20px;
+  width: 75px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.6);
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #00008b;
+}
+
+#welcome-section h1 {
+  font-family: "Baloo Bhai 2", sans-serif;
+  font-weight: 600;
+  font-size: 5em;
+  margin-bottom: 0;
+}
+
+#welcome-section p {
+  margin-top: 0;
+  font-size: 2em;
+  font-style: italic;
+}
+
+@media (max-width: 550px) {
+  #welcome-section p {
+    font-size: 1.8em;
+  }
+}
+
+#projects {
+  padding-top: 50px;
+  text-align: center;
+  background-color: #019bb0;
+}
+
+.project-section-header {
+  width: 640px;
+  margin: 0 auto 2em auto;
+  border-bottom: 2px solid white;
+  font-size: 2em;
+}
+
+@media (max-width: 650px) {
+  .project-section-header {
+    width: 100%;
+  }
+}
+
+.project-tile {
+  background-color: #00008b;
+  width: 400px;
+  height: 500px;
+  transition: transform 500ms, box-shadow 500ms;
+}
+
+.project-tile p {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.project-tile:hover {
+  transform: translate(-20px, -20px);
+}
+
+.thumb {
+  width: 400px;
+  border-bottom: 1px solid white;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1230px) {
+  .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project-tile {
+    margin-top: 25px;
+  }
+}
+
+.button i {
+  padding-top: 10px;
+}
+
+.button {
+  display: inline-block;
+  background-color: rgb(118, 126, 181);
+  width: 200px;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  padding: 0.5em 1.25em;
+  font-family: "Baloo Bhai 2", sans-serif;
+  font-size: 1.5em;
+}
+
+@media (max-width: 640px) {
+  #contact {
+    text-align: center;
+  }
+}
